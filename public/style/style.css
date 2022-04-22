@@ -42,6 +42,10 @@
     margin-bottom: -3px;
 }
 
+.jumbotron-minuman {
+    background-image: url(/images/foto/drink.jpg);
+}
+
 .jumbotron-makanan {
     background-image: url(/images/foto/foodpage.jpg);
     padding: 2rem 1rem;

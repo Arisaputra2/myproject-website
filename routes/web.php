@@ -21,6 +21,6 @@ Route::get('/makanan', function () {
     return view('makanan');
 });
 
-Route::get('/minuman', function () {
+Route::get('/minuman', function() {
     return view('minuman');
 });
