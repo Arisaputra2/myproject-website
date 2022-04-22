@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('section')
+@section('section');
 
 
     <!-- Section Background Scooter-->
