@@ -1,0 +1,210 @@
+.logo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 50px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.about-scooter {
+    font-weight: 200;
+}
+
+.about {
+    font-family: viga;
+}
+
+.logo img:hover {
+    filter: grayscale(20%);
+}
+
+.nav-link,
+.navbar-brand {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    font-family: Viga;
+}
+.nav-link:hover,
+.navbar-brand:hover {
+    color: rgb(119, 122, 131);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.nav-focus:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    width: 30%;
+    margin: auto;
+    margin-bottom: -3px;
+}
+
+.jumbotron-makanan {
+    background-image: url(/images/foto/foodpage.jpg);
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-size: cover;
+    height: 680px;
+    margin-top: -130px;
+}
+
+.jumbotron-home {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-image: url(/images/foto/coffecover.jpg);
+    background-size: cover;
+    height: 650px;
+    margin-top: -130px;
+}
+
+.jumbotron-home h1 {
+    font-weight: 300;
+    margin-top: 150px;
+}
+.jumbotron-makanan p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.jumbotron-home p {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+.jumbotron-makanan h1 {
+    font-weight: bold;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#about::before {
+    content: "";
+    display: block;
+    border-top: 3px solid black;
+    width: 5%;
+    margin: auto;
+}
+
+#backfoto {
+    filter: brightness(50%);
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+#contentfoto {
+    position: relative;
+}
+
+#contentfoto span {
+    font-weight: 500;
+}
+
+/* .text-line {
+    border-bottom: 2px solid white;
+} */
+
+.text-line::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin: auto;
+}
+
+.show-menu {
+    margin-top: 50px;
+}
+
+.show-menu img {
+    width: 500px;
+}
+
+.show-menu p {
+    font-weight: 200;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.show-menu h3 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.show-menu-2 {
+    margin-top: 100px;
+}
+
+.show-menu-2 p {
+    margin-right: 50px;
+}
+
+.show-menu-2 img {
+    height: 600px;
+}
+
+#gallery-food {
+    padding-top: 120px;
+}
+
+#gallery-food .row > * {
+    padding: 0;
+}
+
+.foodhead {
+    font-weight: 200;
+}
+
+.foodhead::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid black;
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+}
+
+.gallery-img-food {
+    width: 100%;
+    height: 200px;
+}
+
+.img-filter:hover {
+    filter: opacity(70%);
+}
+
+.minuman-menu p {
+    font-size: 15px;
+}
+
+.minuman-menu {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.text-scooter {
+    font-weight: bold;
+}
+
+.footer-card {
+    color: rgb(172, 171, 171);
+}
+
+@media (min-width: 992px) {
+    .centered {
+        font-size: 70px;
+    }
+    .show-menu p {
+        margin-top: 50px;
+    }
+}
