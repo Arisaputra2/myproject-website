@@ -68,4 +68,42 @@
       </div>
     {{-- Section Akhir Show Menu 2--}}
 
+    <section>
+      <div class="container">
+       <div class="row text-center mb-5 mt-4">
+          <div class="col">
+           <h3 class="head-question">A Question</h3>
+          </div>
+        </div>
+        <div class="container background p-0">
+          <div class="row">
+            <div class="col-6">
+              <img src="/images/foto/form.jpg" alt="formpic" width="480px" class="rounded">
+            </div>
+            <div class="col-sm-5">
+              <form class="mt-5">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-5">
+                  <label for="exampleInputPassword1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-floating mb-5">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
+                  <label for="floatingTextarea2">Comments</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+<div class="div" style="height: 500px"></div>
 @endsection
