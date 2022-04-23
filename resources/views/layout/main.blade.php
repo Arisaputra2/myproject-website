@@ -13,6 +13,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/page-minuman.css">
+    <link rel="stylesheet" href="style/page-makanan.css">
     <title>Scooter Coffee</title>
 </head>
   <body>

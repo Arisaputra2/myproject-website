@@ -7,7 +7,7 @@
         <div class="jumbotron jumbotron-fluid jumbotron-makanan">
           <div class="container content">
             <h1 class="display-4 fs-1 text-light " data-aos="zoom-out-up">Our Foodpedia</h1>
-            <p class="text-white" data-aos="zoom-out-up" data-aos-delay="50"><a href="#food" class="btn btn-dark text-decoration-none"> Let's Check It</a></p>
+            <p class="text-white " data-aos="zoom-out-up" data-aos-delay="50"><a href="#food" class="btn btn-dark text-decoration-none "> Let's Check It</a></p>
           </div>
         </div>
         {{-- <p class="fw-bold fs-4 text-light"><?= waktu(); ?> Skut !!!</p> --}}      
@@ -42,9 +42,6 @@
                 </div>
                 <div class="col-md-3">
                     <img src="/images/foto/food/7.jpg" alt="gambar7" class="img-fluid gallery-img-food">
-                </div>
-                <div class="col-md-3">
-                    <img src="v" alt="">
                 </div>
             </div>
         </div>

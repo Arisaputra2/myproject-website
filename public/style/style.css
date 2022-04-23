@@ -42,15 +42,6 @@
     margin-bottom: -3px;
 }
 
-.jumbotron-makanan {
-    background-image: url(/images/foto/foodpage.jpg);
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-size: cover;
-    height: 680px;
-    margin-top: -130px;
-}
-
 .jumbotron-home {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -64,20 +55,10 @@
     font-weight: 300;
     margin-top: 150px;
 }
-.jumbotron-makanan p {
-    font-size: 15px;
-    font-weight: 200;
-}
 
 .jumbotron-home p {
     font-weight: bold;
     font-size: 30px;
-    font-family: "Times New Roman", Times, serif;
-}
-.jumbotron-makanan h1 {
-    font-weight: bold;
-    margin-top: 200px;
-    font-size: 50px;
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -151,53 +132,6 @@
 
 .show-menu-2 img {
     height: 600px;
-}
-
-#gallery-food {
-    padding-top: 120px;
-}
-
-#gallery-food .row > * {
-    padding: 0;
-}
-
-.foodhead {
-    font-weight: 200;
-}
-
-.foodhead::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid black;
-    width: 15%;
-    margin: auto;
-    padding: 10px;
-}
-
-.gallery-img-food {
-    width: 100%;
-    height: 200px;
-}
-
-.img-filter:hover {
-    filter: opacity(70%);
-}
-
-.minuman-menu p {
-    font-size: 15px;
-}
-
-.minuman-menu {
-    padding: 20px;
-    margin-bottom: 100px;
-}
-
-.text-scooter {
-    font-weight: bold;
-}
-
-.footer-card {
-    color: rgb(172, 171, 171);
 }
 
 @media (min-width: 992px) {
