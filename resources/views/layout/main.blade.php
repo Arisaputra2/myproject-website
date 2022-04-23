@@ -64,6 +64,11 @@
               <img src="/images/foto/up-arrow.png" alt=up" class="side-bottom">
           </div>
       </a>
+      {{-- footer --}}
+      <div class="container mt-5 mb-5 footer-card">
+        <h6 class="bw-bold text-center p-3">By Scooter Coffee.</h6>
+    </div>
+    {{-- Akhir footer --}}
     </body>
   </html>
   

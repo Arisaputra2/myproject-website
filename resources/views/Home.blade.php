@@ -84,15 +84,15 @@
               <form class="mt-5">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
                 </div>
                 <div class="mb-5">
-                  <label for="exampleInputPassword1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputPassword1">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
                 </div>
                 <div class="form-floating mb-5">
                   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
-                  <label for="floatingTextarea2">Comments</label>
+                  <label for="floatingTextarea2">Comment Here</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button class="btn btn-primary d-none" type="button" disabled>
@@ -105,5 +105,4 @@
         </div>
     </div>
     </section>
-<div class="div" style="height: 500px"></div>
 @endsection

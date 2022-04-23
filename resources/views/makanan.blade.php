@@ -64,12 +64,5 @@
         </div>
       </section>
       {{-- Akhir Section Opsional --}}
-
-      {{-- footer --}}
-      <div class="container mt-5 mb-5 footer-card">
-          <h6 class="bw-bold text-center p-3">By Scooter Coffee.</h6>
-      </div>
-      {{-- Akhir footer --}}
-
       
 @endsection
