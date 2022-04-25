@@ -1,16 +1,15 @@
   @extends('layout.main')
   @section('section');
+ 
   <!-- Section Background Scooter-->
     <section class="text-center" id="home">
       <div class="jumbotron jumbotron-fluid jumbotron-home">
-        <div class="container content">
-          <h1 class="display-4 fs-1 text-light " data-aos="zoom-out-up">Scooter Coffee</h1>
+        <div class="container">
+          <h1 class="fs-1 text-light" data-aos="zoom-out-up">Scooter Coffee</h1>
           <p class="lead text-white" data-aos="zoom-out-up" data-aos-delay="50">Jam Operasional 10.00 - 23.00</p>
         </div>
-      </div>
-      {{-- <p class="fw-bold fs-4 text-light"><?= waktu(); ?> Skut !!!</p> --}}      
+      </div>    
     </section>
-
 
     <!-- Section About -->
       <section class="text-center mb-5">
@@ -69,10 +68,10 @@
     {{-- Section Akhir Show Menu 2--}}
 
     <section>
-      <div class="container">
+      <div class="container mt-5">
        <div class="row text-center mb-5 mt-4">
           <div class="col">
-           <h3 class="head-question">A Question</h3>
+           <h3 class="head-question">Tanya Scooter!</h3>
           </div>
         </div>
         <div class="container background p-0">
@@ -81,18 +80,26 @@
               <img src="/images/foto/form.jpg" alt="formpic" width="480px" class="rounded">
             </div>
             <div class="col-sm-5">
-              <form class="mt-5">
+              <form class="mt-5" action="/" method="get">
+                @csrf
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                  <input type="text" class="form-control" id="name" placeholder="name" required value="{{ old('name') }}">
                 </div>
                 <div class="mb-5">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <input type="email" class="form-control" @error('email')
+                      is-invalid
+                  @enderror id="email" placeholder="email" value="{{ old('email') }}">
                 </div>
-                <div class="form-floating mb-5">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
-                  <label for="floatingTextarea2">Comment Here</label>
+                @error('email')
+                    <div class="invalid-feedback">
+                      {{ $message }}
+                    </div>
+                @enderror
+                <div class="form-feating mb-5">
+                  <textarea class="form-control" name="comment" id="comment" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
+                  <label for="comment">Comment Here</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button class="btn btn-primary d-none" type="button" disabled>

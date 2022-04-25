@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/makanan', function () {
 Route::get('/minuman', function() {
     return view('minuman');
 });
+
+Route::get('/Home', [FormController::class, 'index']);
