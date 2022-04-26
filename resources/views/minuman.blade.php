@@ -55,7 +55,7 @@
           <div class="container">
           <a href="/makanan" class="text-decoration-none text-muted">
             <div class="card" style="width: 18rem;">
-                <img src="/images/foto/drink/2.jpg" class="card-img-top img-filter" alt="minuman" height="286px">
+                <img src="/images/foto/food/3.jpg" class="card-img-top img-filter" alt="minuman" height="286px">
                 <div class="card-body">
                   <p class="card-text text-center">Your Food</p>
                   <p class="card-text text-center text-scooter">By Scooter</p>

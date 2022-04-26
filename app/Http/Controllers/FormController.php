@@ -9,6 +9,6 @@ use App\Http\Controllers\FormController\Auth;
 class FormController extends Controller
 {
   public function index(){
-      //
+      
   }
 }

@@ -1,21 +1,12 @@
-.background {
+.background-form {
     background-image: url(/images/foto/drink/8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .jumbotron-home {
     background-image: url(/images/foto/coffecover.jpg);
-    width: fit-content;
-}
-
-.logo {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 50px;
-}
-
-.logo img {
-    width: 40px;
+    width: 100%;
 }
 
 .about-scooter {
@@ -32,10 +23,10 @@
 
 .nav-link,
 .navbar-brand {
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6);
     font-family: Viga;
-    font-size: 10px;
+    font-size: 15px;
 }
 .nav-link:hover,
 .navbar-brand:hover {
@@ -54,6 +45,7 @@
 
 .jumbotron-home h1 {
     font-size: 10px;
+    padding-top: 100px;
 }
 
 .jumbotron-home p {
@@ -110,12 +102,12 @@
     margin-top: 20px;
     font-size: 15px;
 }
+
 .show-menu h3 {
     font-weight: 700;
     margin-top: 30px;
-    margin-left: 50px;
+    padding: 10px;
 }
-
 .show-menu-2 {
     margin-top: 100px;
 }
@@ -133,11 +125,25 @@
     margin-top: 30px;
 }
 
+.section-about video {
+    width: 300px;
+}
 .section-about p {
     font-size: 12px;
 }
 
 @media (min-width: 992px) {
+    .logo {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 50px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
     .centered {
         font-size: 70px;
     }
@@ -171,6 +177,7 @@
 
     .form-pic {
         display: flex;
+        justify-content: start;
     }
 
     .jumbotron-home h1 {
@@ -209,13 +216,13 @@
     .section-about p {
         font-size: 20px;
     }
+
+    .section-about video {
+        width: 700px;
+    }
 }
 
 @media (min-width: 500px) {
-    .section-about video {
-        width: 500px;
-    }
-
     .jumbotron-home {
         height: 500px;
     }
