@@ -1,17 +1,10 @@
 .background {
     background-image: url(/images/foto/drink/8.jpg);
-    background-position-x: 350px;
-    background-position-y: -150px;
-}
-
-.jumbotron .display-4 {
-    color: white;
-    margin-top: 300px;
 }
 
 .jumbotron-home {
     background-image: url(/images/foto/coffecover.jpg);
-    background-size: cover;
+    width: fit-content;
 }
 
 .logo {
@@ -39,10 +32,10 @@
 
 .nav-link,
 .navbar-brand {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     font-family: Viga;
-    font-size: 20px;
+    font-size: 10px;
 }
 .nav-link:hover,
 .navbar-brand:hover {
@@ -60,13 +53,12 @@
 }
 
 .jumbotron-home h1 {
-    font-weight: 300;
-    margin-top: 0;
+    font-size: 10px;
 }
 
 .jumbotron-home p {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -101,14 +93,7 @@
 
 .text-line {
     border-bottom: 2px solid white;
-}
-
-.text-line::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid white;
-    width: 50%;
-    margin: auto;
+    font-size: 25px;
 }
 
 .show-menu {
@@ -116,13 +101,14 @@
 }
 
 .show-menu img {
-    width: 500px;
+    width: 600px;
+    margin: auto;
 }
 
 .show-menu p {
     font-weight: 200;
-    margin-left: 50px;
     margin-top: 20px;
+    font-size: 15px;
 }
 .show-menu h3 {
     font-weight: 700;
@@ -134,16 +120,21 @@
     margin-top: 100px;
 }
 
-.show-menu-2 p {
-    margin-right: 50px;
-}
-
 .show-menu-2 img {
-    height: 600px;
+    height: 450px;
 }
 
-.imgformpic {
-    width: 50px;
+.form-pic {
+    display: none;
+}
+
+.section-about h1 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.section-about p {
+    font-size: 12px;
 }
 
 @media (min-width: 992px) {
@@ -152,11 +143,12 @@
     }
     .show-menu p {
         margin-top: 50px;
+        font-size: 20px;
+        margin-left: 50px;
     }
 
-    .jumbotron-home {
-        padding: 2rem 1rem;
-        margin-bottom: 2rem;
+    .show-menu img {
+        width: 600px;
     }
 
     .nav-link,
@@ -164,10 +156,80 @@
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
         font-family: Viga;
+        font-size: 15px;
+        margin-left: 5px;
     }
 
     .jumbotron-home {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
         background-image: url(/images/foto/coffecover.jpg);
         background-size: cover;
+        height: 670px;
+        margin-top: -100px;
+    }
+
+    .form-pic {
+        display: flex;
+    }
+
+    .jumbotron-home h1 {
+        font-weight: 300;
+        margin-top: 150px;
+    }
+
+    .jumbotron-home p {
+        font-size: 30px;
+    }
+    .text-line {
+        font-size: 65px;
+    }
+
+    .text-line::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid white;
+        width: 50%;
+        margin: auto;
+    }
+
+    .show-menu-2 img {
+        height: 600px;
+    }
+
+    .show-menu-2 p {
+        margin-right: 50px;
+    }
+
+    .section-about h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .section-about p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 500px) {
+    .section-about video {
+        width: 500px;
+    }
+
+    .jumbotron-home {
+        height: 500px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .show-menu h3::after {
+        border-bottom: 1px solid black;
+        display: block;
+        content: "";
+        width: 50%;
+        margin: auto;
+        padding: 2px;
     }
 }

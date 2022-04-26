@@ -26,4 +26,4 @@ Route::get('/minuman', function() {
     return view('minuman');
 });
 
-Route::get('/Home', [FormController::class, 'index']);
+// Route::get('/Home', [FormController::class, 'index']);

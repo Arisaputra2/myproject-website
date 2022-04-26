@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags
+    <!-- Required meta tags-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/page-minuman.css">
+    {{-- <link rel="stylesheet" href="style/page-minuman.css"> --}}
     <link rel="stylesheet" href="style/page-makanan.css">
     <title>Scooter Coffee</title>
 </head>
@@ -47,28 +47,9 @@
         </div>
       </div>
     </nav>
-    {{-- <nav class="navbar navbar-expand-lg navbar-dark nav-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> --}}
+
     <!-- Navbar Akhir -->
+      
     @yield('section')
 
     {{-- AOS --}}

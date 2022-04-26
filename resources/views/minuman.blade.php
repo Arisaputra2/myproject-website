@@ -3,7 +3,7 @@
      <!-- Section Background Scooter-->
      <section class="text-center">
         <div class="jumbotron jumbotron-fluid jumbotron-minuman">
-          <div class="container content">
+          <div class="container">
             <h1 class="display-4 fs-1 text-light " data-aos="zoom-out-up">Our Drink Here!</h1>
             <p class="text-white" data-aos="zoom-out-up" data-aos-delay="50"><a href="#drink" class="btn btn-dark text-decoration-none text-style"> Let's Check It</a></p>
           </div>
@@ -41,9 +41,9 @@
                 <div class="col-md-3">
                     <img src="/images/foto/drink/7.jpg" alt="gambar7" class="img-fluid gallery-img-drink">
                 </div>
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <img src="v" alt="">
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="" style="height: 250px"></div>
@@ -57,7 +57,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="/images/foto/drink/2.jpg" class="card-img-top img-filter" alt="minuman" height="286px">
                 <div class="card-body">
-                  <p class="card-text text-center">Your drink</p>
+                  <p class="card-text text-center">Your Food</p>
                   <p class="card-text text-center text-scooter">By Scooter</p>
                 </div>
               </div>
