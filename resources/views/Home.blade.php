@@ -68,33 +68,45 @@
     <section>
       <div class="container mt-5">
        <div class="row text-center mb-5 mt-4">
-           <h3 class="head-question">Tanya Scooter!</h3>
+           <h3 class="text-center head-head">Join Jadi Skut Dapatkan Diskon!</h3>
         </div>
         <div class="container background-form">
             <div class="row justify-content-center">
-              <div class="col-8">
-                <form class="mt-5" action="/" method="get">
+              <div class="col-lg-6">
+                <form class="mt-5" action="/" method="post">
+                  @if (session('status'))     
+                  <div class="alert alert-warning" role="alert">
+                    Terima Kasih Telah Bertanya Skut!
+                  </div>
+                  @endif
                   @csrf
                   <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name" name="name" required value="{{ old('name') }}">
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Name" name="name" required value="{{ old('name') }}">
+                    @error('name')
+                    <div class="invalid-feedback">
+                      {{ $message }}
+                    </div>
+                    @enderror
                   </div>
                   <div class="mb-5">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" @error('email')
+                    <input type="email" class="form-control @error('email')
                         is-invalid
-                    @enderror id="email" placeholder="Email" value="{{ old('email') }}">
+                    @enderror" name="email"  id="email" placeholder="Email" value="{{ old('email') }}" required>
+                    @error('email')
+                        <div class="invalid-feedback">
+                          {{ $message }}
+                        </div>
+                    @enderror
                   </div>
-                  @error('email')
-                      <div class="invalid-feedback">
-                        {{ $message }}
-                      </div>
-                  @enderror
-                  <div class="form-feating mb-5">
-                    <label for="comment">Comment Here</label>
-                    <textarea class="form-control" name="comment" id="comment" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
+                  <div class="form-floating mb-5">
+                    <textarea class="form-control" name="pesan" id="pesan" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
+                    <label for="pesan">Kata-Kata Buat Scooter Coffee</label>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="row text-center p-4">
+                    <button type="submit" class="btn btn-primary mb-4">Submit</button>
+                  </div>
                 </form>
               </div>
             </div>

@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
-use Dotenv\Repository\Adapter\GuardedWriter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\FormController;
 
-class form_join extends Model
+class Form extends Model
 {
     use HasFactory;
-    
+
+    protected $guarded = ['id'];
+
 }

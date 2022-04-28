@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MakananController;
+use App\Http\Controllers\MinumanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,16 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/makanan', function () {
-    return view('makanan');
-});
+Route::get('/makanan',[MakananController::class, 'index']);
 
-Route::get('/minuman', function() {
-    return view('minuman');
-});
+Route::get('/minuman', [MinumanController::class, 'index']);
 
-Route::get('/Home/confirm', [FormController::class, 'index']);
+Route::post('/', [FormController::class, 'store']);
