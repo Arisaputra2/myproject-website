@@ -76,7 +76,7 @@
                 <form class="mt-5" action="/" method="post">
                   @if (session('status'))     
                   <div class="alert alert-warning" role="alert">
-                    Terima Kasih Telah Bertanya Skut!
+                    Terima Kasih! <strong>Anda Telah Join</strong>
                   </div>
                   @endif
                   @csrf
@@ -101,7 +101,7 @@
                     @enderror
                   </div>
                   <div class="form-floating mb-5">
-                    <textarea class="form-control" name="pesan" id="pesan" style="height: 190px;min-height:100px; max-height:200px" maxlength="300"></textarea>
+                    <textarea class="form-control" name="pesan" id="pesan" placeholder="Kata-kata buat skut" style="height: 190px;min-height:100px; max-height:200px" maxlength="300" required></textarea>
                     <label for="pesan">Kata-Kata Buat Scooter Coffee</label>
                   </div>
                   <div class="row text-center p-4">

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->text('pesan');
+            $table->text('pesan')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
